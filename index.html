@@ -35,5 +35,46 @@
 				</p>
 			</div>
 		</section>
+		<!-- Kontakt sekcija -->
+		<section id="kontakt">
+			<div>
+				<h3>Kontakt</h3>
+				<!-- Kontakt forma s akcijom slanja emaila na ivan.ivic@example.com -->
+				<form
+					action="mailto:ivan.ivic@example.com"
+					method="post"
+					enctype="text/plain"
+				>
+					<div>
+						<label for="ime">Ime:</label>
+						<input
+							type="text"
+							id="ime"
+							placeholder="Unesite ime"
+							name="ime"
+						/>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="Unesite email"
+							name="email"
+						/>
+					</div>
+					<div>
+						<label for="poruka">Poruka:</label>
+						<textarea
+							rows="5"
+							id="poruka"
+							name="poruka"
+							placeholder="Unesite poruku"
+						></textarea>
+					</div>
+					<button type="submit">Pošalji</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
