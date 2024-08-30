@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hr">
 	<head>
-		<title>Portfolio - Marko</title>
+		<title>Portfolio - Josip</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
@@ -14,7 +14,6 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css">
 		<style>
 			body {
 				font: 20px Montserrat, sans-serif;
@@ -28,8 +27,8 @@
 				margin-bottom: 45px;
 			}
 			.bg-1 {
-				background-color: #e1e8e7; /* Green */
-				color: #555555;
+				background-color: #1abc9c; /* Green */
+				color: #ffffff;
 			}
 			.bg-2 {
 				background-color: #474e5d; /* Dark Blue */
@@ -65,7 +64,7 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Marko</a>
+				<a class="navbar-brand" href="#">Josip</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -101,19 +100,18 @@
 			<div class="container-fluid bg-1 text-center">
 				<h3 class="margin">O meni</h3>
 				<img
-					src="disk.png"
+					src="../moja-profilna.jpg"
 					class="img-responsive img-circle margin"
 					style="display: inline"
 					alt="Bird"
-					width="250px"
-					height="auto"
 				/>
-				<h3>Marko </h3>
+				<h3>Bok! Ja sam Josip!</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					U svijet IT-a aktivno sam ušao krajem 2022. godine. Od tada
+					aktivno sudjelujem u razvoju IT zajednice na području
+					Virovitičko-podravske županije, kako kroz projekt {mITup},
+					čiji sam pokretač, tako i kroz ostale projekte s udrugom
+					DISK Slatina.
 				</p>
 			</div>
 		</section>
@@ -230,54 +228,57 @@
 		<section id="kontakt">
 			<div class="container-fluid bg-2 text-center">
 				<h3 class="margin">Kontakt</h3>
-				<!-- Kontakt forma s akcijom slanja emaila na Marko.ivic@example.com -->
-				<form 
-					action="send_email.html" 
-					method="get" 
-					enctype="text/plain" >
+				<!-- Kontakt forma s akcijom slanja emaila na ivan.ivic@example.com -->
+				<form
+					action="mailto:ivan.ivic@example.com"
+					method="post"
+					enctype="text/plain"
+				>
 					<div class="mb-3">
 						<label for="ime" class="form-label">Ime:</label>
-						<input type="text" class="form-control" id="ime" placeholder="Unesite ime" name="ime"/>
+						<input
+							type="text"
+							class="form-control"
+							id="ime"
+							placeholder="Unesite ime"
+							name="ime"
+						/>
 					</div>
 					<div class="mb-3">
 						<label for="email" class="form-label">Email:</label>
-						<input type="email" class="form-control" id="email" placeholder="Unesite email" name="email" />
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							placeholder="Unesite email"
+							name="email"
+						/>
 					</div>
 					<div class="mb-3">
 						<label for="poruka" class="form-label">Poruka:</label>
-						<textarea class="form-control" rows="5" id="poruka" name="poruka" placeholder="Unesite poruku" ></textarea>
+						<textarea
+							class="form-control"
+							rows="5"
+							id="poruka"
+							name="poruka"
+							placeholder="Unesite poruku"
+						></textarea>
 					</div>
-					<button 
-						type="submit" 
-						class="btn btn-primary" 
-						onclick="validateForm(event)">
+					<button type="submit" class="btn btn-primary">
 						Pošalji
 					</button>
 				</form>
 			</div>
 		</section>
 
-		<section id="vic">
-			<div class="container-fluid bg-1 text-center">
-				<h3 class="margin">Vic dana</h3>				 
- 				<p id="vic_element">
-					
-				</p>
-				<button class="btn btn-primary" onclick="dohvatiVic();">Molim novi vic!</button>
-			</div>
-		</section>
-
 		<!-- Footer -->
 		<footer class="container-fluid bg-4 text-center">
-			<p>&copy; 2024 Marko. Sva prava pridržana.</p>
+			<p>&copy; 2024 Josip Hetrih. Sva prava pridržana.</p>
 		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
-		<script src="index.js"></script>
 	</body>
 </html>
-
- 
